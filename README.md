@@ -1,6 +1,11 @@
 # hs-mana-curve
 A simple module that generates a text-based mana curve graph based on an array of card costs.
 
+## Instalation
+```
+npm i hs-mana-curve --save
+```
+
 ## How to use
 ```js
 var manaCurve = require("hs-mana-curve");
