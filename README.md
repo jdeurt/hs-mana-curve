@@ -1,0 +1,1 @@
+# hs-mana-curve
