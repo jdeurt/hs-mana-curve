@@ -1,0 +1,22 @@
+{
+  "name": "hs-mana-curve",
+  "version": "1.0.0",
+  "description": "A simple module that generates a text-based mana curve graph based on an array of card costs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdeurt/hs-mana-curve.git"
+  },
+  "keywords": [
+    "hearthstone"
+  ],
+  "author": "Juan de Urtubey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdeurt/hs-mana-curve/issues"
+  },
+  "homepage": "https://github.com/jdeurt/hs-mana-curve#readme"
+}
