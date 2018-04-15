@@ -8,7 +8,7 @@ module.exports = (costs = [], max = 8) => {
     var curve = "";
     for(var layer = 0; layer < max; layer++) {
         costs.forEach(cost => {
-            if(cost > max-1-layer) curve += "\xDB ";
+            if(cost > max-1-layer) curve += "█ ";
             else if(cost == 0 && layer == max-1) curve += "_ ";
             else curve += "  ";
         });
