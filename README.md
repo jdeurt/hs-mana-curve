@@ -14,6 +14,7 @@ var cardCosts = [0, 3, 6, 0, 6, 4, 3, 4, 2, 0, 2];
 //card costs taken from https://www.hearthpwn.com/decks/1082636-spiteful-lady-in-white
 
 var curveCap = 8;
+// how high the module counts cards with a certain mana cost before they get capped off
 
 var curve = manaCurve(cardCosts, curveCap);
 
