@@ -21,12 +21,8 @@ var curve = manaCurve(cardCosts, curveCap);
 
 /*Output:
               █ 
-              █ 
     █   █     █ 
-    █   █     █ 
-    █   █ █   █ 
-  █ █   █ █ █ █ 
-  █ █   █ █ █ █ 
+  ▄ █   █ █ ▄ █ 
 _ █ █ _ █ █ █ █ 
 0 1 2 3 4 5 6 7+
 */
