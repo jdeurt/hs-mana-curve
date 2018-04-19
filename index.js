@@ -10,12 +10,10 @@ module.exports = (costs = [], max = 8) => {
     for(var layer = 0; layer < max; layer += 2) {
         costs.forEach(cost => {
             if(cost >= max-layer) {
-                if(cost == max-layer-1) {
-                    curve += "▄ ";
-                }
-                else {
-                    curve += "█ ";
-                }
+                curve += "█ ";
+            }
+            else if(cost == max-layer-1) {
+                curve += "▄ ";
             }
             else if(cost == 0 && layer == max-1) curve += "_ ";
             else curve += "  ";
