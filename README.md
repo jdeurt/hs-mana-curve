@@ -1,12 +1,21 @@
 # hs-mana-curve
 A simple module that generates a text-based mana curve graph based on an array of card costs.
 
-## Instalation
+### Instalation
 ```
 npm i hs-mana-curve --save
 ```
 
-## How to use
+### Parameters
+```
+parameter (default value): description
+```
+* costs ([]): An array of integers that represent the amount of cards with a cost equal to their index.
+* max (8): The maximum amount of cards that will be shown in the curve before it gets capped out.
+* mode ("expanded"): Either `expanded` or `compressed`. Determines how to curve will look.
+* showAmt (false): Whether or not to show the amount of cards for each mana cost at the top of each bar.
+
+### How to use
 ```js
 var manaCurve = require("hs-mana-curve");
 
