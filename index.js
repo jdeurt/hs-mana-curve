@@ -15,7 +15,7 @@ module.exports = (costs = [], max = 8) => {
             else if(cost == max-layer-1) {
                 curve += "▄ ";
             }
-            else if(cost == 0 && layer == max-1) curve += "_ ";
+            else if(cost == 0 && layer == max-2) curve += "_ ";
             else curve += "  ";
         });
         curve += "\n";
