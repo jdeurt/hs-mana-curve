@@ -6,9 +6,17 @@ module.exports = (costs = [], max = 8) => {
         costs = costs.slice(0, 8);
     }
     var curve = "";
-    for(var layer = 0; layer < max; layer++) {
+    var has = [];
+    for(var layer = 0; layer < max; layer += 2) {
         costs.forEach(cost => {
-            if(cost > max-1-layer) curve += "█ ";
+            if(cost >= max-layer) {
+                if(cost == max-layer-1) {
+                    curve += "▄ ";
+                }
+                else {
+                    curve += "█ ";
+                }
+            }
             else if(cost == 0 && layer == max-1) curve += "_ ";
             else curve += "  ";
         });
