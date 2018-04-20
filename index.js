@@ -13,6 +13,8 @@ module.exports = (costs = [], max = 8, mode = "expanded", showAmt = false) => {
             curve += cost+" ";
         });
         curve += "\n";
+        curve += "- - - - - - - -";
+        curve += "\n";
     }
     if(mode == modes[0]) {
         for(var layer = 0; layer < max; layer++) {
