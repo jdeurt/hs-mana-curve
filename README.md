@@ -28,11 +28,51 @@ var curveCap = 8;
 
 var curve = manaCurve(cardCosts, curveCap, "compressed", false);
 
-/*Output:
+//output below
+```
+
+### Different outputs
+**Expanded**
+```
+              █ 
+              █ 
+    █   █     █ 
+    █   █     █ 
+    █   █ █   █ 
+  █ █   █ █ █ █ 
+  █ █   █ █ █ █ 
+_ █ █ _ █ █ █ █ 
+0 1 2 3 4 5 6 7+
+```
+**Compressed**
+```
               █ 
     █   █     █ 
   ▄ █   █ █ ▄ █ 
 _ █ █ _ █ █ █ █ 
 0 1 2 3 4 5 6 7+
-*/
+```
+**Expanded w/ showAmt**
+```
+0 3 6 0 6 4 3 8
+- - - - - - - -
+              █ 
+              █ 
+    █   █     █ 
+    █   █     █ 
+    █   █ █   █ 
+  █ █   █ █ █ █ 
+  █ █   █ █ █ █ 
+_ █ █ _ █ █ █ █ 
+0 1 2 3 4 5 6 7+
+```
+**Compressed w/ showAmt**
+```
+0 3 6 0 6 4 3 8
+- - - - - - - -
+              █ 
+    █   █     █ 
+  ▄ █   █ █ ▄ █ 
+_ █ █ _ █ █ █ █ 
+0 1 2 3 4 5 6 7+
 ```
