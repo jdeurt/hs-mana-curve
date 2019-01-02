@@ -1,3 +1,15 @@
+/*
+    I'm going to be completely honest I have no fucking idea how any of this works anymore
+*/
+
+/**
+ * Generates a deck mana curve string.
+ * @param {Array<number>} costs An array representing the amount of cards for each mana cost. Indexed by mana cost.
+ * @param {number} max Maximum amount of cards shown in the curve before they're cut off.
+ * @param {"expanded"|"compressed"} mode Determines how the curve will look. Expanded is taller than compressed.
+ * @param {boolean} showAmt Whether to show the amount of cards for that mana cost above each column.
+ * @returns {string}
+ */
 module.exports = (costs = [], max = 8, mode = "expanded", showAmt = false) => {
     var modes = ["expanded", "compressed"];
     if(modes.indexOf(mode) < 0) throw new Error("Invalid mode specified.");
